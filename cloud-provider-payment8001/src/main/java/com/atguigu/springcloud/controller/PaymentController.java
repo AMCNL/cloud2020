@@ -33,7 +33,7 @@ public class PaymentController {
 
 
     @GetMapping(value = "/payment/get/{id}")
-    public CommonResult getPaymentById(@PathVariable("id") Long id){
+    public CommonResult getPaymentById(@PathVariable("id") Long id){//@PathVariable这个注解可以把@GetMapping(value = "/payment/get/{id}")中id的值进行绑定
          Payment payment= paymentService.getPaymentById(id);
         log.info("****查询结果****："+payment+":hello热部署");
 
