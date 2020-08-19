@@ -14,7 +14,11 @@ import javax.annotation.Resource;
 @Slf4j
 public class OrderController {
     //设置8001支付访问路径
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    //public static final String PAYMENT_URL = "http://localhost:8001";//单机版使用，集群版不能写死
+
+    //集群版
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";//集群版要写微服务名称
+
 
     @Resource
     private RestTemplate restTemplate;
