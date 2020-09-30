@@ -16,9 +16,11 @@ public class ApplicationContextConfig {
         return new RestTemplate();
     }
 
-    @Bean
+/**
+*
+ *  @Bean
     public IRule getIReule(){ //通过获取一个IRule对象，
         return  new RandomRule();  //达到的目的，用我们重新选择的随机，替代默认的轮训方式
-    }
+    }*/
 
 }
