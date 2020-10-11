@@ -18,7 +18,6 @@ public interface PaymentService {
 
 
     @GetMapping(value = "/payment/get/{id}")
-    CommonResult<Payment> getPaymentById(@PathVariable("id") Long id);//@PathVariable这个注解可以把@GetMapping(value = "/payment/get/{id}")中id的值进行绑定
-
+    CommonResult<Payment> getPaymentById(@PathVariable("id") Long id);
     
 }
